@@ -1,0 +1,19 @@
+.hero 
+	height: 100%
+	.hero__indct
+		+outer-container()
+		.hero__indct__colum
+			+span-columns(3)
+			&.hero__indct--left
+				background-color: #372b40
+				color: #fff
+				+pad()
+				+position(absolute, auto auto 0 auto)
+			&.hero__indct--right
+				float: right
+				+position(absolute, auto 0 40px auto)
+				a 	
+					display: inline-block
+					background-color : $common-color
+					text-transform: uppercase
+					+pad(15px 35px)
