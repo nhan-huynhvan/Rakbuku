@@ -1,10 +1,28 @@
 .header-inner 
 	+outer-container()
 .logo
-	+position(absolute, 40px null null null)
+	+position(absolute, 2.500em null null null)
 	display: inline-block
+	+media (min-width 320px max-width 1120px)
+		left: 0.938em
 	.logo__a--main 
 		background-repeat: no-repeat
 		display: inline-block
-		+size(209px 201px)
+		+size(210px 200px)
 		+background-image(url("../images/logo.png"))
+.main-menu 
+	position: fixed
+	right: 0
+.menu-items
+	.item__link
+		background-color: $menu-color
+		color: $white
+		display: inline-block
+		padding-top: 0.625em
+		text-align: center
+		+size(5em)
+		&.item__link-is-active 
+			background-color: $menu-active
+		i
+			display: block
+			font-size: 2em

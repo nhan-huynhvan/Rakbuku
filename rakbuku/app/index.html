@@ -14,6 +14,7 @@
 		<!-- endbower -->
 		<!-- endbuild -->
 		<!-- build:css(.tmp) styles/main.css -->
+		<link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
 		<link rel="stylesheet" href="styles/main.css">
 		<!-- endbuild -->
 		<!-- build:js scripts/vendor/modernizr.js -->
@@ -27,22 +28,196 @@
 		<![endif]-->
 		<header class="main-header">
 			<div class="header-inner">
-				<h1 class="logo">
-					<a href="#" class="logo__a--main"></a>
+				<h1 class="logo none-display">
+				<a href="#" class="logo__a--main"></a>
 				</h1>
+				<nav class="main-menu">
+					<ul class="menu-items">
+						<li class="item"><a href="" class="item__link item__link-is-active"><i class="fa fa-home"></i>Home</a></li>
+						<li class="item"><a href="" class="item__link"><i class="fa fa-pencil"></i>Services</a></li>
+						<li class="item"><a href="" class="item__link"><i class="fa fa-user"></i>About</a></li>
+						<li class="item"><a href="" class="item__link"><i class="fa fa-folder-open"></i>Work</a></li>
+						<li class="item"><a href="" class="item__link"><i class="fa fa-comment"></i>Contact</a></li>
+					</ul>
+				</nav>
 			</div>
 		</header>
-		<div class="hero">
-		<div class="hero__indct">
-			<div class="hero__indct__colum hero__indct--left">				
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed hic recusandae accusamus voluptates esse, blanditiis aspernatur nulla sit harum ad nam dolorum maiores animi quibusdam provident expedita, amet deleniti adipisci possimus doloribus. Facilis aut minima culpa sapiente consequuntur provident obcaecati. Soluta dolorum culpa ab obcaecati cumque iusto blanditiis repudiandae hic.</p>
-			</div>
-			<div class="hero__indct__colum hero__indct--right">
-				<p>We've got what you need!</p>
-				<a href="">Get Started &#187;</a>
+		<div class="hero none-display">
+			<div class="hero__indct">
+				<div class="hero__indct__colum hero__indct--left">
+					<h2>Introduction</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed hic recusandae accusamus voluptates esse, blanditiis aspernatur nulla sit harum ad nam dolorum maiores animi quibusdam provident expedita, amet deleniti adipisci possimus doloribus. Facilis aut minima culpa sapiente consequuntur provident obcaecati. Soluta dolorum culpa ab obcaecati cumque iusto blanditiis repudiandae hic.</p>
+				</div>
+				<div class="hero__indct__colum hero__indct--right">
+					<p>We've got what you need!</p>
+					<a href="" class="is-get-start">Get Started &#187;</a>
+				</div>
 			</div>
 		</div>
-		</div>
+		<section class="bg-linear-gradient screen none-display">
+			<div class="wrapper">
+				<div class="disc">
+					<h3 class="disc__title">Services</h3>
+					<p class="disc__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, voluptas!</p>
+				</div>
+				<div class="services">
+					<div class="services__colum services__colum--list">
+						<ul class='services__list'>
+							<li class="service__item">
+								<h4 class="service__item--title">Web design</h4>
+								<p class="service__item--disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet eos, possimus dignissimos explicabo cumque, unde sint fugiat adipisci vitae nemo voluptas iste sapiente vero. Asperiores tenetur, ducimus distinctio necessitatibus.</p>
+							</li>
+							<li class="service__item">
+								<h4 class="service__item--title">Web development</h4>
+								<p class="service__item--disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet eos, possimus dignissimos explicabo cumque, unde sint fugiat adipisci vitae nemo voluptas iste sapiente vero. Asperiores tenetur, ducimus distinctio necessitatibus.</p>
+							</li>
+							<li class="service__item">
+								<h4 class="service__item--title">Responsive design</h4>
+								<p class="service__item--disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet eos, possimus dignissimos explicabo cumque, unde sint fugiat adipisci vitae nemo voluptas iste sapiente vero. Asperiores tenetur, ducimus distinctio necessitatibus.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="services__colum services__colum--images">
+						<div class="services__colum--images-image services__colum--images-image--pc"><img src="images/pc.png" alt=""></div>
+						<div class="services__colum--images-image services__colum--images-image--tablet"><img src="images/tablet.png" alt=""></div>
+						<div class="services__colum--images-image services__colum--images-image--mobile"><img src="images/mobile.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-violet screen none-display">
+			<div class="wrapper">
+				<div class="disc">
+					<h3 class="disc__title">About</h3>
+					<p class="disc__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, voluptas!</p>
+				</div>
+				<div class="about">
+					<div class="about__div--disc">
+						<h4 class="about__div--disc-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolorem.</h4>
+						<p class="about__div--disc-detailt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi itaque laboriosam repellendus magni temporibus eum dolore dolorem eius voluptatum sit perferendis, impedit modi tenetur iure ipsam error fugit placeat. Temporibus!</p>
+					</div>
+					<div class="about__div--list">
+						<h4 class="about-title-list">OUR AMAZING TEAM</h4>
+						<ul class="employees">
+							<li class="employee">
+								<img src="images/ceo.png" alt="" class="employee__image">
+								<h3 class="employee-name">JOHN DOE</h3>
+								<h4 class="employee-post">CEO</h4>
+								<div class="employee__sharing">
+									<a href="" class="employee__sharing__item employee__sharing__item--facebook">
+										<i class="fa fa-facebook-square"></i>
+									</a>
+									<a href="" class="employee__sharing__item employee__sharing__item--twitter">
+										<i class="fa fa-twitter-square"></i>
+									</a>
+									<a href="" class="employee__sharing__item ememployee__sharing__item--instagram">
+										<i class="fa fa-instagram"></i>
+									</a>
+								</div>
+							</li>
+							<li class="employee">
+								<img src="images/designer.png" alt="" class="employee__image">
+								<h3 class="employee-name">JANE DE SIGN</h3>
+								<h4 class="employee-post">Designer</h4>
+								<div class="employee__sharing">
+									<a href="" class="employee__sharing__item employee__sharing__item--facebook">
+										<i class="fa fa-facebook-square"></i>
+									</a>
+									<a href="" class="employee__sharing__item employee__sharing__item--twitter">
+										<i class="fa fa-twitter-square"></i>
+									</a>
+									<a href="" class="employee__sharing__item ememployee__sharing__item--instagram">
+										<i class="fa fa-instagram"></i>
+									</a>
+								</div>
+							</li>
+							<li class="employee">
+								<img src="images/developer.png" alt="" class="employee__image">
+								<h3 class="employee-name">LORD DEVEL</h3>
+								<h4 class="employee-post">Developer</h4>
+								<div class="employee__sharing">
+									<a href="" class="employee__sharing__item employee__sharing__item--facebook">
+										<i class="fa fa-facebook-square"></i>
+									</a>
+									<a href="" class="employee__sharing__item employee__sharing__item--twitter">
+										<i class="fa fa-twitter-square"></i>
+									</a>
+									<a href="" class="employee__sharing__item ememployee__sharing__item--instagram">
+										<i class="fa fa-instagram"></i>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="screen bg-violet-opacity">
+			<div class="wrapper">
+				<div class="disc">
+					<h3 class="disc__title">Out work</h3>
+					<p class="disc__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, voluptas!</p>
+				</div>
+				<div class="outwork">
+					<ul class="outworks">
+						<li class="outworks__item">
+							<img src="images/design-01.png" alt="" class="outworks__item--image">
+							<div class="outworks__item--disc">
+								<h4 class="outworks__item--disc-prodct">Lorem ipsum dolor sit amet</h4>
+								<h5 class="outworks__item--disc-post">Designer</h4>
+							</div>
+						</li>
+						<li class="outworks__item">
+							<img src="images/design-02.png" alt="" class="outworks__item--image">
+							<div class="outworks__item--disc">
+								<h4 class="outworks__item--disc-prodct">Lorem ipsum dolor sit amet</h4>
+								<h5 class="outworks__item--disc-post">Designer</h4>
+							</div>
+						</li>
+						<li class="outworks__item">
+							<img src="images/design-03.png" alt="" class="outworks__item--image">
+							<div class="outworks__item--disc">
+								<h4 class="outworks__item--disc-prodct">Lorem ipsum dolor sit amet</h4>
+								<h5 class="outworks__item--disc-post">Designer</h4>
+							</div>
+						</li>
+						<li class="outworks__item">
+							<img src="images/design-03.png" alt="" class="outworks__item--image">
+							<div class="outworks__item--disc">
+								<h4 class="outworks__item--disc-prodct">Lorem ipsum dolor sit amet</h4>
+								<h5 class="outworks__item--disc-post">Designer</h4>
+							</div>
+						</li>
+						<li class="outworks__item">
+							<img src="images/design-01.png" alt="" class="outworks__item--image">
+							<div class="outworks__item--disc">
+								<h4 class="outworks__item--disc-prodct">Lorem ipsum dolor sit amet</h4>
+								<h5 class="outworks__item--disc-post">Designer</h4>
+							</div>
+						</li>
+						<li class="outworks__item">
+							<img src="images/design-02.png" alt="" class="outworks__item--image">
+							<div class="outworks__item--disc">
+								<h4 class="outworks__item--disc-prodct">Lorem ipsum dolor sit amet</h4>
+								<h5 class="outworks__item--disc-post">Designer</h4>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		<section class="none-display">
+			<div class="wrapper">
+				<div class="disc">
+					<h3 class="disc__title">Contact Us</h3>
+					<p class="disc__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quisquam.</p>
+				</div>
+				<div class="contact">
+					Contact
+				</div>
+			</div>
+		</section>
 		
 		<!-- build:js(.) scripts/vendor.js -->
 		<!-- bower:js -->
