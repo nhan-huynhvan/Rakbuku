@@ -10,10 +10,16 @@
 		display: inline-block
 		+size(210px 200px)
 		+background-image(url("../images/logo.png"))
+		&.js-bounceInDown
+			+animation(bounceInDown 1s)
 .main-menu 
 	position: fixed
 	right: 0
 .menu-items
+	display: none
+	&.js-fadeInRight
+		display: block
+		+animation(fadeInRight 1s)
 	.item__link
 		background-color: $menu-color
 		color: $white
@@ -21,6 +27,8 @@
 		padding-top: 0.625em
 		text-align: center
 		+size(5em)
+		&:hover
+			+animation(shake 1s)
 		&.item__link-is-active 
 			background-color: $menu-active
 		i

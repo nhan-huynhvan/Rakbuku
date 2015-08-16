@@ -9,18 +9,26 @@
 			&.hero__indct--left
 				background-color: #372b40
 				color: #fff
+				display: none
 				+pad(1em)
-				+position(absolute, auto auto 0 auto)
+				&.js-rotateInDownRight
+					display: block
+					+position(absolute, auto auto 1px auto)
+					+animation(rotateInDownRight 2s)
 				+media (min-width 320px max-width 1120px) 
 					left: 0.938em
 			&.hero__indct--right
 				color: $white
 				font-weight: bold
 				float: right
+				display: none
+				&.js-rotateInDownLeft
+					display: block
+					+position(absolute, auto 0 2.500em auto)				
+					+animation(rotateInDownLeft 2s)
 				+media (min-width 320px max-width 1120px)
 					right: 0.938em
 					text-align: center
-				+position(absolute, auto 0 2.500em auto)				
 				.is-get-start
 					background-color : $common-color
 					color: $white
