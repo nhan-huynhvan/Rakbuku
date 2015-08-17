@@ -7,6 +7,10 @@
 		position: relative
 		.services__colum--images-image
 			position: absolute
+			visibility: hidden
+			&.is-fadeInDownBig
+				visibility: visible
+				+animation(fadeInDownBig 1s)
 			+media(min-width 320px max-width 768px)
 				position: relative
 				text-align: center
@@ -30,6 +34,10 @@
 .services
 	.service__item
 		margin-top: 1.875em
+		visibility: hidden
+		&.is-fadeInLeft
+			visibility: visible
+			+animation(fadeInLeft 2s)
 	.service__item--title
 		font-size: 1.125em
 		text-transform: uppercase

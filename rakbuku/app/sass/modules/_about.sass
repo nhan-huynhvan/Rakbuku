@@ -2,7 +2,11 @@
 	background-color: #312638
 .about__div--disc
 	color: $white
+	visibility: hidden
 	+pad(1.875em 0 1.875em 0)
+	&.is-bounceInDown
+		visibility: visible
+		+animation(bounceInDown 1s)
 	.about__div--disc-title
 		font-size: 1.125em
 		text-transform: uppercase
@@ -14,6 +18,10 @@
 	font-size: 1.125em
 	margin-bottom: 0.938em
 	text-transform: uppercase
+	visibility: hidden
+	&.is-bounceIn
+		visibility: visible
+		+animation(bounceIn 1s)
 .employees
 	.employee
 		color: $white
@@ -22,8 +30,12 @@
 		text-align: center
 		text-transform: uppercase
 		margin-bottom: 0.938em
+		visibility: hidden
 		+span-columns(4)
 		+omega(3n)
+		&.is-fadeIn
+			visibility: visible
+			+animation(fadeIn 2s)
 		+media(min-width 421px max-width 768px)
 			+span-columns(6)
 			+omega(2n)
