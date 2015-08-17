@@ -1,12 +1,38 @@
-.is-contact 
-	background-color: #3d3047
-	height: 100%
-	background-repeat: no-repeat
-	background-size: cover
-	+background-image(url("../images/map-image.png"))
-.contacter
-	+span-columns(6)
+.is-contact
+    background-color: #3d3047
+    height: 100%
+    background-repeat: no-repeat
+    background-size: cover
+
+    +background-image(url("../images/map-image.png"))
+
+    input
+        +pad(1em)
+
+    textarea
+        height: 13.438em
+
+    input, textarea, button
+        display: none
+        margin-bottom: 1.875em
+        &.is-bounceIn
+            display: block
+
+            +animation(bounceIn 2s)
+.contact 
+    margin-top: 2.500em
+
+.contacter, .messages
+    +span-columns(6)
+
+    +media(min-width 320px max-width 768px)
+        +span-columns(12)
+
 .messages
-	+span-columns(6)
+    +omega
+
 .submit-info
-	+span-columns(6)
+    +span-columns(12)
+
+    #submit
+       float: right

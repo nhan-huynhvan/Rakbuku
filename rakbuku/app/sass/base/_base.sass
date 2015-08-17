@@ -1,34 +1,56 @@
-@import "variables"
-html, body 
-	height: 100%
-	+media (min-width 769px max-width 1120px)
-		font-size: 0.875em
-	+media (min-width 320px max-width 768px)
-		font-size: 0.750em
-section.screen 
-	height: 100%
-.wrapper 
-	+pad(2.500em 0 2.500em 0)
-	+outer-container()
-	+media (min-width 320px max-width 1120px)
-		padding-left: 0.938em
-		padding-right: 0.938em
+@import variables
+
+html, body
+    height: 100%
+
+    +media(min-width 769px max-width 1120px)
+        font-size: 0.875em
+
+
+    +media(min-width 320px max-width 768px)
+        font-size: 0.75em
+
+section.screen
+    height: 100%
+
+    +media(min-width 320px max-width 1024px)
+        height: auto
+
+.wrapper
+    +pad(2.5em 0 2.5em 0)
+
+    +outer-container
+
+    +media(min-width 320px max-width 1120px)
+        padding-left: 0.938em
+        padding-right: 0.938em
+
 .none-display
-	display: none !important
-.bg-linear-gradient 
-	+linear-gradient(#3b2b45, #432d3f)
+    display: none !important
+
+.bg-linear-gradient
+    +linear-gradient(#3b2b45, #432d3f)
+
 .disc
-	color: $white
-	+pad(1.250em 0 1.250em 0)
-	position: relative
-	+animation(bounceInDown 1s)
-	.disc__title
-		font-size: 1.875em
-		margin: 0
-		&:after
-			content: ""
-			background-color: $common-color
-			+size(100px 2px)
-			+position(absolute, null null 0.625em 0)
-	.disc__content
-		font-size: 1.125em
+    color: $white
+
+    +pad(1.25em 0 1.25em 0)
+
+    position: relative
+
+    +animation(bounceInDown 1s)
+
+    .disc__title
+        font-size: 1.875em
+        margin: 0
+
+        &:after
+            content: ""
+            background-color: $common-color
+
+            +size(100px 2px)
+
+            +position(absolute, null null 0.625em 0)
+
+    .disc__content
+        font-size: 1.125em

@@ -1,28 +1,44 @@
-.bg-violet-opacity 
-	background-color: #372b40
+.bg-violet-opacity
+    background-color: #372b40
+
 .outworks
-	margin-top: 3.125em
-	.outworks__item
-		background-color: $white
-		margin-bottom: 2.3576515979%
-		+span-columns(4)
-		+omega(3n)
-		visibility: hidden
-		&.is-bounceIn
-			visibility: visible
-			+animation(bounceIn 2s)
-		+media(min-width 421px max-width 768px)
-			+span-columns(6)
-			+omega(2n)
-		+media(min-width 320px max-width 420px)
-			+span-columns(12)
-			// +omega()
-		.outworks__item--image
-			width: 100%
-	.outworks__item--disc		
-		text-align: center
-		+pad(1.563em 0)
-		.outworks__item--disc-prodct
-			font-size: 1.125em
-		.outworks__item--disc-post
-			font-size: 0.875em
+    margin-top: 3.125em
+
+    .outworks__item
+        background-color: $white
+        margin-bottom: 2.35765%
+
+        +span-columns(4)
+
+        +omega(3n)
+
+        visibility: hidden
+
+        &.is-bounceIn
+            visibility: visible
+
+            +animation(bounceIn 2s)
+
+        +media(min-width 421px max-width 768px)
+            +span-columns(6)
+
+            +omega(2n)
+
+
+        +media(min-width 320px max-width 420px)
+            +span-columns(12)
+
+
+        .outworks__item--image
+            width: 100%
+
+    .outworks__item--disc
+        text-align: center
+
+        +pad(1.563em 0)
+
+        .outworks__item--disc-prodct
+            font-size: 1.125em
+
+        .outworks__item--disc-post
+            font-size: 0.875em
