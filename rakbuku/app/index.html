@@ -23,17 +23,15 @@
 		
 	</head>
 	<body>
-		<!--[if lt IE 10]>
-		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-		<![endif]-->
+		<!-- Main header -->
 		<header class="main-header">
 			<div class="header-inner">
 				<h1 class="logo">
-				<a href="#" class="logo__a--main"></a>
+					<a href="#" class="logo__a--main"></a>
 				</h1>
 				<nav class="main-menu">
 					<ul class="menu-items">
-						<li class="item"><a href="#home" class="item__link item__link-is-active"><i class="fa fa-home"></i>Home</a></li>
+						<li class="item"><a href="#home" class="item__link item--active"><i class="fa fa-home"></i>Home</a></li>
 						<li class="item"><a href="#services" class="item__link"><i class="fa fa-pencil"></i>Services</a></li>
 						<li class="item"><a href="#about" class="item__link"><i class="fa fa-user"></i>About</a></li>
 						<li class="item"><a href="#outwork" class="item__link"><i class="fa fa-folder-open"></i>Work</a></li>
@@ -42,6 +40,9 @@
 				</nav>
 			</div>
 		</header>
+		<!-- End main header -->
+
+		<!-- Hero init -->
 		<div class="hero">
 			<div class="hero__indct">
 				<div class="hero__indct__colum hero__indct--left">
@@ -54,6 +55,9 @@
 				</div>
 			</div>
 		</div>
+		<!-- End of hero init -->
+
+		<!-- Services screen -->
 		<section class="bg-linear-gradient screen none-display is-services">
 			<div class="wrapper">
 				<div class="disc">
@@ -61,7 +65,7 @@
 					<p class="disc__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, voluptas!</p>
 				</div>
 				<div class="services">
-					<div class="services__colum services__colum--list">
+					<div class="services__colum services--list">
 						<ul class='services__list'>
 							<li class="service__item js-webdesign">
 								<h4 class="service__item--title">Web design</h4>
@@ -77,14 +81,17 @@
 							</li>
 						</ul>
 					</div>
-					<div class="services__colum services__colum--images">
-						<div class="services__colum--images-image services__colum--images-image--pc"><img src="images/pc.png" alt=""></div>
-						<div class="services__colum--images-image services__colum--images-image--tablet"><img src="images/tablet.png" alt=""></div>
-						<div class="services__colum--images-image services__colum--images-image--mobile"><img src="images/mobile.png" alt=""></div>
+					<div class="services__colum services--images">
+						<div class="services--images-item services--images-item--pc"><img src="images/pc.png" alt=""></div>
+						<div class="services--images-item services--images-item--tablet"><img src="images/tablet.png" alt=""></div>
+						<div class="services--images-item services--images-item--mobile"><img src="images/mobile.png" alt=""></div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<!-- End services screen -->
+
+		<!-- About us screen -->
 		<section class="bg-violet  screen none-display is-about">
 			<div class="wrapper">
 				<div class="disc">
@@ -92,57 +99,57 @@
 					<p class="disc__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, voluptas!</p>
 				</div>
 				<div class="about">
-					<div class="about__div--disc">
-						<h4 class="about__div--disc-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolorem.</h4>
-						<p class="about__div--disc-detailt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi itaque laboriosam repellendus magni temporibus eum dolore dolorem eius voluptatum sit perferendis, impedit modi tenetur iure ipsam error fugit placeat. Temporibus!</p>
+					<div class="about--disc">
+						<h4 class="about--disc__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolorem.</h4>
+						<p class="about--disc__detailt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi itaque laboriosam repellendus magni temporibus eum dolore dolorem eius voluptatum sit perferendis, impedit modi tenetur iure ipsam error fugit placeat. Temporibus!</p>
 					</div>
-					<div class="about__div--list">
-						<h4 class="about-title-list">OUR AMAZING TEAM</h4>
+					<div class="about--list">
+						<h4 class="about-list-title">OUR AMAZING TEAM</h4>
 						<ul class="employees">
 							<li class="employee js-ceo">
-								<img src="images/ceo.png" alt="" class="employee__image">
-								<h3 class="employee-name">JOHN DOE</h3>
-								<h4 class="employee-post">CEO</h4>
+								<img src="images/ceo.png" alt="" class="employee--image">
+								<h3 class="employee--name">JOHN DOE</h3>
+								<h4 class="employee--post">CEO</h4>
 								<div class="employee__sharing">
-									<a href="" class="employee__sharing__item employee__sharing__item--facebook">
+									<a href="#" class="employee__sharing__item employee__sharing--facebook">
 										<i class="fa fa-facebook-square"></i>
 									</a>
-									<a href="" class="employee__sharing__item employee__sharing__item--twitter">
+									<a href="#" class="employee__sharing__item employee__sharing--twitter">
 										<i class="fa fa-twitter-square"></i>
 									</a>
-									<a href="" class="employee__sharing__item ememployee__sharing__item--instagram">
+									<a href="#" class="employee__sharing__item ememployee__sharing--instagram">
 										<i class="fa fa-instagram"></i>
 									</a>
 								</div>
 							</li>
 							<li class="employee js-designer">
-								<img src="images/designer.png" alt="" class="employee__image">
-								<h3 class="employee-name">JANE DE SIGN</h3>
-								<h4 class="employee-post">Designer</h4>
+								<img src="images/designer.png" alt="" class="employee--image">
+								<h3 class="employee--name">JANE DE SIGN</h3>
+								<h4 class="employee--post">Designer</h4>
 								<div class="employee__sharing">
-									<a href="" class="employee__sharing__item employee__sharing__item--facebook">
+									<a href="" class="employee__sharing__item employee__sharing--facebook">
 										<i class="fa fa-facebook-square"></i>
 									</a>
-									<a href="" class="employee__sharing__item employee__sharing__item--twitter">
+									<a href="" class="employee__sharing__item employee__sharing--twitter">
 										<i class="fa fa-twitter-square"></i>
 									</a>
-									<a href="" class="employee__sharing__item ememployee__sharing__item--instagram">
+									<a href="" class="employee__sharing__item ememployee__sharing--instagram">
 										<i class="fa fa-instagram"></i>
 									</a>
 								</div>
 							</li>
 							<li class="employee js-developer">
-								<img src="images/developer.png" alt="" class="employee__image">
-								<h3 class="employee-name">LORD DEVEL</h3>
-								<h4 class="employee-post">Developer</h4>
+								<img src="images/developer.png" alt="" class="employee--image">
+								<h3 class="employee--name">LORD DEVEL</h3>
+								<h4 class="employee--post">Developer</h4>
 								<div class="employee__sharing">
-									<a href="" class="employee__sharing__item employee__sharing__item--facebook">
+									<a href="" class="employee__sharing__item employee__sharing--facebook">
 										<i class="fa fa-facebook-square"></i>
 									</a>
-									<a href="" class="employee__sharing__item employee__sharing__item--twitter">
+									<a href="" class="employee__sharing__item employee__sharing--twitter">
 										<i class="fa fa-twitter-square"></i>
 									</a>
-									<a href="" class="employee__sharing__item ememployee__sharing__item--instagram">
+									<a href="" class="employee__sharing__item ememployee__sharing--instagram">
 										<i class="fa fa-instagram"></i>
 									</a>
 								</div>
@@ -152,6 +159,9 @@
 				</div>
 			</div>
 		</section>
+		<!-- End  of about us -->
+
+		<!-- Outwork screen -->
 		<section class="screen bg-violet-opacity none-display is-outwork">
 			<div class="wrapper">
 				<div class="disc">
@@ -206,7 +216,9 @@
 				</div>
 			</div>
 		</section>
+		<!-- End of outwork -->
 		
+		<!-- Contact screen -->
 		<section class="none-display is-contact">
 			<div class="wrapper">
 				<div class="disc">
@@ -230,6 +242,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- End of contact screen -->
 		
 		<!-- build:js(.) scripts/vendor.js -->
 		<!-- bower:js -->

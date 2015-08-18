@@ -1,87 +1,60 @@
 .bg-violet
     background-color: #312638
-
-.about__div--disc
+.about--disc
     color: $white
     visibility: hidden
-
     +pad(1.875em 0 1.875em 0)
-
     &.is-bounceInDown
         visibility: visible
-
         +animation(bounceInDown 1s)
-
-    .about__div--disc-title
+    .about--disc__title
         font-size: 1.125em
         text-transform: uppercase
-
-    .about__div--disc-detailt
+    .about--disc__detailt
         font-size: 0.875em
-
-.about-title-list
+.about-list-title
     color: $white
     font-size: 1.125em
     margin-bottom: 0.938em
     text-transform: uppercase
     visibility: hidden
-
     &.is-bounceIn
         visibility: visible
-
         +animation(bounceIn 1s)
-
 .employees
     .employee
-        color: $white
         background-color: #281f2e
+        color: $white
+        margin-bottom: 0.938em
         padding-top: 2.813em
         text-align: center
         text-transform: uppercase
-        margin-bottom: 0.938em
         visibility: hidden
-
         +span-columns(4)
-
         +omega(3n)
-
         &.is-fadeIn
             visibility: visible
-
             +animation(fadeIn 2s)
-
         +media(min-width 421px max-width 768px)
             +span-columns(6)
-
             +omega(2n)
-
-
         +media(min-width 320px max-width 420px)
             +span-columns(12)
-
             +omega(1)
-
-
-        .employee-name
+        .employee--name
             font-size: 1.125em
             margin-top: 1.25em
             margin-bottom: 0.625em
-
-        .employee-post
+        .employee--post
             color: $common-color
             font-size: 0.875em
             margin-bottom: 1.563em
-
     .employee__sharing
         background-color: $common-color
-
         +pad(1.25em 0)
-
         .employee__sharing__item
             color: $white
-
             + .employee__sharing__item
                 margin-left: 1.875em
-
             .fa
                 font-size: 1.5em

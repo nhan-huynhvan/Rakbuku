@@ -1,38 +1,32 @@
 .is-contact
     background-color: #3d3047
-    height: 100%
     background-repeat: no-repeat
     background-size: cover
-
+    height: 100%
     +background-image(url("../images/map-image.png"))
-
     input
         +pad(1em)
-
     textarea
         height: 13.438em
-
+    button
+    	background-color: $common-color
+    	border: none
+        padding: 0.938em 2.188em
     input, textarea, button
         display: none
         margin-bottom: 1.875em
         &.is-bounceIn
             display: block
-
-            +animation(bounceIn 2s)
+            +animation(fadeIn 2s)
 .contact 
     margin-top: 2.500em
-
 .contacter, .messages
     +span-columns(6)
-
     +media(min-width 320px max-width 768px)
         +span-columns(12)
-
 .messages
     +omega
-
 .submit-info
     +span-columns(12)
-
     #submit
        float: right
