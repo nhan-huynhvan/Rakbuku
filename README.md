@@ -2,6 +2,7 @@
 	- An example for Bourbon, Neat, Bitters, Refills
 # Install
 	- Clone sourecode: https://github.com/nhanhv/Rakbuku.git
+	- Run 'cd Rakbuku' and  checkout develop branch
 	- Run 'vagrant up'
 	- Run 'vagrant ssh'
 	- Run 'cd /vagrant/rakbuku'
