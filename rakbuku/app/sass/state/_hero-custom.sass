@@ -1,8 +1,9 @@
+/* Customs style for hero init template */
 .hero
     height: 100%
     .hero__indct
         +outer-container
-        .hero__indct__colum
+        .hero-colum
             +span-columns(3)
             +media(min-width 320px max-width 1120px)
                 +span-columns(6)
@@ -11,7 +12,7 @@
                 color: #fff
                 display: none
                 +pad(1em)
-                &.is-rotateInDownRight
+                &.is-rotate-in-down-right
                     display: block
                     +position(absolute, auto auto 1px auto)
                     +animation(rotateInDownRight 2s)
@@ -22,7 +23,7 @@
                 font-weight: bold
                 float: right
                 display: none
-                &.is-rotateInDownLeft
+                &.is-rotate-in-down-left
                     display: block
                     +position(absolute, auto 0 2.5em auto)
                     +animation(rotateInDownLeft 2s)
