@@ -2,16 +2,16 @@
 @import "animate"
 html, body
     height: 100%
-    +media(min-width 769px max-width 1120px)
+    +media($md-screen)
         font-size: 0.875em
-    +media(min-width 320px max-width 768px)
+    +media($sm-screen)
         font-size: 0.75em
 section.screen
     min-height: 100%
 .wrapper
     +pad(2.5em 0 2.5em 0)
     +outer-container
-    +media(min-width 320px max-width 1120px)
+    +media($sm-screen)
         padding-left: 0.938em
         padding-right: 0.938em
 .none-display

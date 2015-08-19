@@ -5,7 +5,7 @@
         +outer-container
         .hero-colum
             +span-columns(3)
-            +media(min-width 320px max-width 1120px)
+            +media(max-width 1024px min-width 320px)
                 +span-columns(6)
             &.hero__indct--left
                 background-color: #372b40
@@ -16,7 +16,7 @@
                     display: block
                     +position(absolute, auto auto 1px auto)
                     +animation(rotateInDownRight 2s)
-                +media(min-width 320px max-width 1120px)
+                +media(max-width 1024px min-width 320px)
                     left: 0.938em
             &.hero__indct--right
                 color: $white
@@ -27,7 +27,7 @@
                     display: block
                     +position(absolute, auto 0 2.5em auto)
                     +animation(rotateInDownLeft 2s)
-                +media(min-width 320px max-width 1120px)
+                +media(max-width 1024px min-width 320px)
                     right: 0.938em
                     text-align: center
                 .is-get-start

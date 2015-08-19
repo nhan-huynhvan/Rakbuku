@@ -101,9 +101,9 @@ var Rakbuku = {};
                 var webDesign = $('.js-webdesign'),
                     webDevelopment = $('.js-webdevelopment'),
                     webResponsive = $('.js-responsive'),
-                    pcImage = $('.services--images-item--pc'),
-                    tabletImage = $('.services--images-item--tablet'),
-                    mobileImage = $('.services--images-item--mobile'),
+                    pcImage = $('.image-item--pc'),
+                    tabletImage = $('.image-item--tablet'),
+                    mobileImage = $('.image-item--mobile'),
                     fadeInLeft = 'is-fade-in-left',
                     fadeInDownBig = 'is-fade-in-down-big';
 

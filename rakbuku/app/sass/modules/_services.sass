@@ -1,34 +1,34 @@
 .services__colum
     color: $white
     +span-columns(6)
-    +media(min-width 320px max-width 768px)
+    +media($sm-screen)
         +span-columns(12)
     &.services--images
         position: relative
-        .services--images-item
+        .image-item
             position: absolute
             visibility: hidden
             &.is-fade-in-down-big
                 visibility: visible
                 +animation(fadeInDownBig 1s)
-            +media(min-width 320px max-width 768px)
+            +media($sm-screen)
                 position: relative
                 text-align: center
                 right: 0
                 left: 0
                 top: 0
-            &.services--images-item--pc
+            &.image-item--pc
                 right: 0
-            &.services--images-item--tablet
+            &.image-item--tablet
                 left: 140px
                 top: 130px
-                +media(min-width 320px max-width 768px)
+                +media($sm-screen)
                     left: 0
                     top: 0
-            &.services--images-item--mobile
+            &.image-item--mobile
                 top: 235px
                 left: 110px
-                +media(min-width 320px max-width 768px)
+                +media($sm-screen)
                     top: 0
                     left: 0
 .services
